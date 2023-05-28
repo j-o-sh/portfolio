@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Sue+Ellen+Francisco&display=swap');
+
+:root {
+  --c-black: #000;
+  --c-dark: #262626;
+  --c-light: #F0F7F4;
+  --c-dimm: #8B8F8D;
+  --c-primary: #6DD400;
+  --c-primary-dimmed: #3F7A00;
+  --c-contrast: #3C91E6;
+
+  --f-normal: Nunito 1rem 300; 
+  --f-display-l: Sue Ellen Francisco 3.5rem; 
+  --f-display: Sue Ellen Francisco 2.5rem; 
+  --f-code: Fira Code 1rem;
+}
