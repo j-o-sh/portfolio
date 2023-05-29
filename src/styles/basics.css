@@ -9,8 +9,29 @@
   --c-primary-dimmed: #3F7A00;
   --c-contrast: #3C91E6;
 
-  --f-normal: Nunito 1rem 300; 
-  --f-display-l: Sue Ellen Francisco 3.5rem; 
-  --f-display: Sue Ellen Francisco 2.5rem; 
-  --f-code: Fira Code 1rem;
+  --f-normal: Nunito; 
+  --f-display: Sue Ellen Francisco; 
+  --f-code: Fira Code;
+
+  font-family: Nunito;
+}
+
+html, body { height: 100%; margin: 0; }
+
+body {
+  background: var(--c-dark);
+  color: var(--c-light);
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+  font-family: Sue Ellen Francisco;
+  font-weight: 400;
+}
+h1, .h1 { font-size: 60px; }
+h2, .h2 { font-size: 52px; }
+h3, .h3 { font-size: 45px; }
+h4, h5, h6, .h4 { font-size: 36px; }
+
+.darker {
+  color: var(--c-dimm);
 }

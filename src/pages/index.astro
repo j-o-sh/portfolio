@@ -11,15 +11,71 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
+		<main>
 			<h1>Hi, I'm Josh</h1>
-			<p>I make <ul>
+			<span class="h4 darker tagline">I make</span>
+			<ul class="h4 darker">
 				<li>web apps</li>
 				<li>design systems</li>
 				<li>mobile apps</li>
 				<li>web sites</li>
-			</ul></p>
+			</ul>
 			<Navigation />
-			<p>I am a professional web developer / designer / architect.</p>
-		<Footer />
+			<p class="description">I am a professional web developer / designer / architect.</p>
+		</main>
+		<Footer class="footer"/>
 	</body>
 </html>
+
+<style>
+main {
+	display: grid;
+	grid-template-columns: 1fr, *;
+	grid-template-rows: *, *, *, *;
+	grid-template-areas: 
+		"headline stuff"
+		"tagline stuff"
+		"menu stuff"
+		"description description"
+		;
+	grid-auto-flow: column;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	align-self: end;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+body::before {
+	display: block;
+	content: '';
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	grid-area: stuff;
+}
+li {
+	list-style: none;
+}
+
+.description {
+	grid-area: description;
+}
+
+.tagline {
+	justify-self: end;
+	margin-right: .25em;
+	height: 1em;
+	margin-top: -.5em;
+}
+</style>
